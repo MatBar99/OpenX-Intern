@@ -27,7 +27,7 @@ Run ``cmd`` and install ``pip`` and ``virtualenv`` if necessary.
 
  - Create virtual environment, where you have downloaded repository and call it f.e. ``myenv``:
 
-``virtualenv myenv``
+`` python3 -m venv myenv``
 
  - Run virtual environment: 
 
