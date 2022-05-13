@@ -20,7 +20,7 @@ git clone https://github.com/MatBar99/OpenX-Intern.git
 
 
 
-### 1. Create virtual environment in Python:
+### 1. Create virtual environment in Python and install requirements:
 
 Run ``cmd`` and install ``pip`` and ``virtualenv`` if necessary.
 
@@ -32,6 +32,10 @@ Run ``cmd`` and install ``pip`` and ``virtualenv`` if necessary.
  - Run virtual environment: 
 
 ``myenv\Scripts\activate``
+
+- Install given requirements:
+``pip install -r requirements.txt``
+
 
 ### 2. In order to check first task, run ``task1.py``:
 
