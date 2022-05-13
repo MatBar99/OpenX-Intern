@@ -31,7 +31,7 @@ Run ``cmd`` and install ``pip`` and ``virtualenv`` if necessary.
 
  - Run virtual environment: 
 
-``task_one\Scripts\activate``
+``myenv\Scripts\activate``
 
 ### 2. In order to check first task, run ``task1.py``:
 
