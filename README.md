@@ -7,16 +7,14 @@ A solution for two tasks.
 
 ### 0. Download repository
 
-There is need to install'git'.
+There is need to install 'git'.
 
 Run ``cmd`` then type ``cd`` in order to find place where repository should be installed.
 
 Next, download it by typing: 
 
 ``
-
 git clone https://github.com/MatBar99/OpenX-Intern.git 
-
 `` 
 
 
