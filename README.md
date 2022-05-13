@@ -45,7 +45,7 @@ Run ``cmd`` and install ``pip`` and ``virtualenv`` if necessary.
  python find-available-slot.py --calendars "in" --duration-in-minutes 30 --minimum-people 2
 ```
 For the first task, due to long time of execution and spontaneous errors (non existing websites, bad formatting of .json files etc.) I have decided to:
-1. Save results of Supply Chain in .txt file.
+1. Save results of Supply Chain in `paths.txt` file.
 2. Reduce the number of analyzed subsellers up to 50 per one seller.
 
 For the second task, I have decided to create "reference date" according to .pdf file - 2022-07-01 09:00:00. 
