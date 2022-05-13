@@ -39,6 +39,7 @@ def find_sellers(data):
                     sellers_list.append(seller['domain'])
                 except Exception as e:
                     print(e)
+                    continue
             sellers_list = list(dict.fromkeys(sellers_list)) #clearing empty lists
         return sellers_list
     else:
@@ -47,8 +48,8 @@ def find_sellers(data):
 def create_chain_tree(data, start_path, results, file):
     datas = load_file(data)
     direct_sellers = find_sellers(datas)
-    if len(direct_sellers) > 25:
-            direct_sellers = direct_sellers[:25] # reduction used to show that method works without finding all parameters
+    if len(direct_sellers) > 20:
+            direct_sellers = direct_sellers[:20] # reduction used to show that method works without finding all parameters
     if len(direct_sellers) > 0:
         for i in direct_sellers:
             if i in start_path: # quick fix for problems with infinite looping
@@ -57,6 +58,7 @@ def create_chain_tree(data, start_path, results, file):
             results.append(path)
             file.write(path + '\n')
             create_chain_tree(i, path, results, file)
+
     return results    
 
 
@@ -66,22 +68,3 @@ if __name__ == "__main__":
     with open('paths.txt', 'w') as file:
         tree = create_chain_tree("openx.com", "OpenX.com --> ", results, file)
         print(tree)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
